@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipping Children for the AI Age</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f9faff;
+color:#1a1a1a;
+overflow-x:hidden;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+.hero{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+text-align:center;
+gap:40px;
+}
+
+.hero-title{
+font-family:'Playfair Display',serif;
+font-size:48px;
+line-height:1.2;
+background:linear-gradient(90deg,#2c6cff,#2bb673);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero-sub{
+margin-top:20px;
+font-size:18px;
+color:#555;
+max-width:650px;
+margin-left:auto;
+margin-right:auto;
+line-height:1.7;
+}
+
+.price{
+margin-top:25px;
+font-size:20px;
+}
+
+.old{
+text-decoration:line-through;
+color:#888;
+margin-right:10px;
+}
+
+.new{
+font-size:38px;
+font-weight:700;
+color:#2bb673;
+}
+
+.cta{
+display:inline-block;
+margin-top:35px;
+padding:18px 42px;
+border-radius:40px;
+background:linear-gradient(90deg,#2c6cff,#2bb673);
+color:white;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.cta:hover{
+transform:translateY(-4px);
+box-shadow:0 25px 45px rgba(0,0,0,0.25);
+}
+
+.hero-image{
+text-align:center;
+margin-top:50px;
+}
+
+.hero-image img{
+width:987px;
+max-width:100%;
+height:auto;
+border-radius:20px;
+box-shadow:0 30px 60px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.hero-image img:hover{
+transform:scale(1.05);
+}
+
+/* Parent Thoughts Section */
+
+.parent-thoughts{
+margin-top:70px;
+text-align:center;
+}
+
+.thought-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.thought{
+background:white;
+padding:22px;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+font-size:16px;
+color:#444;
+font-style:italic;
+}
+
+.thought-ending{
+margin-top:30px;
+font-size:18px;
+color:#444;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+line-height:1.6;
+}
+
+/* Discount */
+
+.discount-section{
+text-align:center;
+margin-top:40px;
+padding:25px;
+background:#ffffff;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.discount-badge{
+display:inline-block;
+background:#2bb673;
+color:white;
+padding:8px 18px;
+border-radius:30px;
+font-size:14px;
+margin-bottom:10px;
+}
+
+.discount-text{
+font-size:16px;
+color:#444;
+max-width:700px;
+margin:auto;
+line-height:1.6;
+}
+
+/* Features */
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:36px;
+font-family:'Playfair Display',serif;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#2c6cff;
+}
+
+.card p{
+color:#333;
+line-height:1.6;
+}
+
+/* CTA */
+
+.cta-section{
+margin-top:100px;
+background:linear-gradient(135deg,#2c6cff,#2bb673);
+color:white;
+text-align:center;
+padding:70px 30px;
+border-radius:24px;
+}
+
+.cta-section h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta-section p{
+max-width:600px;
+margin:auto;
+margin-bottom:30px;
+line-height:1.7;
+}
+
+.cta-section a{
+background:white;
+color:#2c6cff;
+padding:18px 40px;
+border-radius:40px;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.cta-section a:hover{
+background:#f1f1f1;
+}
+
+.trust{
+margin-top:90px;
+text-align:center;
+color:#555;
+font-size:16px;
+}
+
+footer{
+margin-top:60px;
+text-align:center;
+font-size:14px;
+color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<div>
+
+<h1 class="hero-title">Equipping Children for the AI Age</h1>
+
+<p class="hero-sub">
+Every parent hopes their child will grow up confident, capable, and ready for the future.  
+But the world is changing quickly, and artificial intelligence is becoming part of everyday life.
+
+This guide was created to help parents raise children who can think independently, stay emotionally strong, and grow into capable individuals in a rapidly changing world.
+</p>
+
+<div class="price">
+<span class="old">$134</span>
+<span class="new">$27</span>
+</div>
+
+<a class="cta" href="https://eliorbenari.gumroad.com/l/Parentingguide" target="_blank">
+Kindly Access the Guide
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+<img src="cover(1).jpg" alt="ebook cover">
+</div>
+
+<!-- Parent Thoughts Section -->
+
+<div class="parent-thoughts">
+
+<h2 class="section-title">Many Parents Quietly Wonder…</h2>
+
+<div class="thought-grid">
+
+<div class="thought">
+Will my child still have strong values and confidence in a world filled with technology?
+</div>
+
+<div class="thought">
+How do I raise a child who thinks independently instead of relying on AI for everything?
+</div>
+
+<div class="thought">
+What skills will truly matter for children growing up in this new world?
+</div>
+
+<div class="thought">
+How can I help my child stay emotionally strong while the world keeps changing?
+</div>
+
+<div class="thought">
+Am I truly preparing my child for the future?
+</div>
+
+</div>
+
+<p class="thought-ending">
+If questions like these have crossed your mind, you’re not alone.  
+This guide was created with those concerns in mind.
+</p>
+
+</div>
+
+<!-- Discount Section -->
+
+<div class="discount-section">
+
+<div class="discount-badge">
+Special Courtesy Discount
+</div>
+
+<p class="discount-text">
+As a small gesture of appreciation to parents who are interested in preparing their children for the future, 
+this guide is currently available at a reduced price for a limited period.
+</p>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">What You May Gain From This Guide</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>🧠 Mental Strength</h3>
+<p>Help your child develop resilience, focus, and confidence when facing challenges.</p>
+</div>
+
+<div class="card">
+<h3>💡 Independent Thinking</h3>
+<p>Encourage children to think clearly and make decisions without relying too heavily on technology.</p>
+</div>
+
+<div class="card">
+<h3>💰 Financial Awareness</h3>
+<p>Introduce healthy money habits and financial thinking from an early age.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Future-Ready Skills</h3>
+<p>Prepare children for a future where technology and AI will shape many opportunities.</p>
+</div>
+
+<div class="card">
+<h3>💖 Emotional Intelligence</h3>
+<p>Teach children how to understand emotions and build strong relationships.</p>
+</div>
+
+<div class="card">
+<h3>🌱 Long-Term Growth</h3>
+<p>Guide your child toward independence, confidence, and lifelong learning.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="cta-section">
+
+<h2>Support Your Child’s Future</h2>
+
+<p>
+Parenting has always been about preparing children for the world they will grow into.  
+This guide simply offers ideas that may help you do that with confidence in the age of AI.
+</p>
+
+<a href="https://eliorbenari.gumroad.com/l/Parentingguide" target="_blank">
+View the Guide
+</a>
+
+</div>
+
+<div class="trust">
+Trusted by parents who care deeply about their children's future.
+</div>
+
+<footer>
+© 2026 Parenting Guidebook
+</footer>
+
+</div>
+
+</body>
+</html>
